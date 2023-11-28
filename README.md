@@ -1,62 +1,73 @@
 # HAND-CRICKET-DUEL
-Hand Cricket Duel: Interactive Cricket Game
+**Hand Cricket Duel: Multiplayer Cricket Game**
 
-Overview
-Hand Cricket Duel is a browser-based interactive cricket game implemented in HTML, CSS, and JavaScript. The game simulates a cricket match between two players, allowing them to participate in a virtual duel of batting and bowling. The game involves a toss, player turns, score tracking, and ends with a winner or a tie.
+## Overview
 
-Mechanism
-HTML Structure:
+**Hand Cricket Duel** is a multiplayer cricket game implemented in HTML, CSS, and JavaScript. The game allows two players to engage in a virtual cricket match, taking turns to bat and bowl. It includes a toss mechanism, player input for runs, and displays scores and results.
 
-The game interface is structured with sections for player names, toss buttons, toss result display, and the main game container. Player names and inputs for entering runs are organized in a visually appealing layout.
-CSS Styling:
+## Mechanism
 
-The CSS styling enhances the readability and aesthetics of the game. It provides a clean and organized appearance, aligning with the game's theme.
-JavaScript Functions:
+1. **HTML Structure:**
+   - The game interface is built using HTML, incorporating elements for player names, toss buttons, game status, and result displays.
 
-Toss Mechanism (startToss(player)) Function:
+2. **CSS Styling:**
+   - CSS is used for styling to create a visually appealing and user-friendly interface. The layout is centered, and styling elements like buttons, input fields, and result displays are defined.
 
-Simulates a toss for each player, displaying the result (Heads or Tails) and determining the toss winner. The toss winner gets the first turn, and the game interface is revealed.
-Run Entry (enterRuns()) Function:
+3. **JavaScript Functions:**
 
-Allows players to input runs (between 1 and 6) during their turn. Validates the input and updates the game state, including scores, current turn, and result display.
-Switch Player (switchPlayer()) Function:
+   - **`startToss(player)` Function:**
+     - Initiates a coin toss for each player, determining the winner.
+     - Displays toss results and decides who bats or bowls first.
 
-Alternates the turn between Player 1 and Player 2 after each valid run entry.
-End Game (endGame()) Function:
+   - **`enterRuns()` Function:**
+     - Allows the current player to input runs for their turn.
+     - Checks for valid input (between 1 and 6) and updates scores accordingly.
+     - Switches players after each turn.
+     - Handles the end of the game after the specified number of overs.
 
-Concludes the game by displaying the final result, including the winner or indicating a tie.
-Game Flow:
+   - **`switchPlayer()` Function:**
+     - Switches the current player after each turn.
 
-The game progresses through tosses, player turns, and score updates based on the runs entered by players. The match concludes after a set number of overs, revealing the winner or declaring a tie.
-Uses and Benefits
-Entertainment:
+   - **`endGame()` Function:**
+     - Determines the winner based on the total scores.
+     - Displays the result and congratulatory message.
+     - Resets the game for a new match.
 
-Hand Cricket Duel provides an engaging and interactive experience for cricket enthusiasts and casual players alike.
-Two-Player Interaction:
+4. **Game Flow:**
+   - Players input their names and initiate tosses to decide the batting/bowling order.
+   - Players take turns entering runs, and the scores are updated.
+   - The game ends after the specified number of overs, and the winner is declared.
 
-Allows two players to compete against each other, adding a social and competitive element to the game.
-Randomized Toss:
+## Uses and Benefits
 
-Incorporates a toss mechanism with random outcomes, adding an element of unpredictability to the game.
-User-Friendly Interface:
+- **Multiplayer Engagement:**
+  - Enables two players to participate simultaneously, enhancing the multiplayer gaming experience.
 
-The clean and intuitive interface makes it easy for players to understand and enjoy the game.
-Score Tracking:
+- **Toss Mechanism:**
+  - Incorporates a coin toss to decide which player bats or bowls first, adding an element of chance.
 
-Tracks and displays scores for both players in real-time, enhancing the competitiveness of the match.
-Dynamic Turn Switching:
+- **User Interaction:**
+  - Engages users by allowing them to input runs for each turn, simulating a cricket match experience.
 
-Alternates turns between players, creating a dynamic and engaging gameplay experience.
-Game Conclusion:
+- **Dynamic Updates:**
+  - Provides real-time updates on scores and results, creating an interactive and immersive gaming environment.
 
-Provides a clear and conclusive end to the game, announcing the winner or indicating a tie.
-Customizable:
+- **Customizable Gameplay:**
+  - Allows players to set the number of overs, providing flexibility for a quick game or a more extended match.
 
-Players can customize the game by entering their names, adding a personal touch to the gaming experience.
-How to Play
-Enter the names of Player 1 and Player 2.
-Click the "Player 1 Toss" and "Player 2 Toss" buttons to determine the order of play.
-Follow the on-screen instructions to enter runs during your turn (between 1 and 6).
-Scores are updated in real-time.
-The game concludes after the specified number of overs, revealing the winner or indicating a tie.
-Enjoy the virtual duel of Hand Cricket!
+- **Responsive Design:**
+  - The game is designed to be responsive, ensuring a seamless experience on various devices.
+
+- **Randomization:**
+  - Uses randomization for the toss, adding unpredictability to the game.
+
+## How to Play
+
+1. Enter the names of Player 1 and Player 2.
+2. Initiate tosses for each player to decide the batting/bowling order.
+3. Players take turns entering runs (between 1 and 6) when prompted.
+4. Scores are updated, and the game switches to the next player after each turn.
+5. The game ends after the specified number of overs, and the winner is declared.
+6. Click "New Game" to reset and start a new match.
+
+Enjoy playing Hand Cricket Duel and experience the thrill of a virtual cricket match!
